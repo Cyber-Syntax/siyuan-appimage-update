@@ -1,5 +1,3 @@
-# update_Appimages
-- Siyuan and Super Productivity appimage update scripts.
 # About Siyuan Script
 - It's insalling last siyuan release and checking the sha256.
   - The script has custom lines. Do not use without looking.
@@ -30,5 +28,4 @@ https://github.com/siyuan-note/siyuan/issues/5164
 - Thanks to tobealive
 
 
-# Super Productivity TODO
-- [ ] Write a script for Super Productivity as well until you do global script for every appimages.
+
