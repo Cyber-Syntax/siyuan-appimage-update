@@ -27,7 +27,7 @@
 # Acknowledgments
 - Inspiration
 https://github.com/siyuan-note/siyuan/issues/5164
-- Thanks to tobealive and ChatGPT.
+- Thanks to tobealive
 
 
 # Super Productivity TODO
