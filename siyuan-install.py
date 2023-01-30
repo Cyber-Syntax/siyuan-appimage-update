@@ -31,7 +31,7 @@ def verify_file():
         contents = f.read()    
         match = re.search(rf'siyuan-{version}-linux\.AppImage', contents)
         if match:                
-            cmd =["sha256sum", "siyuan-2.7.0-linux.AppImage", "-c", "SHA256SUMS.txt"]
+            cmd =["sha256sum", f"siyuan-{version}-linux.AppImage", "-c", "SHA256SUMS.txt"]
             result = subprocess.run(cmd, capture_output=True, text=True)              
             if f"siyuan-{version}-linux.AppImage: OK" in result.stdout:            
                 subprocess.run(["mv", f"siyuan-{version}-linux.AppImage", "siyuan.AppImage"])
