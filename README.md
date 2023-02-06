@@ -9,7 +9,6 @@
 - [X] Write version txt file
 - [ ] Check update when script started
 - [ ] Update comment's when you achieve new knowledge.
-- [ ] Make it usable for other appimages as well.
 
 # Authors
 - Cyber-Syntax - Initial work
