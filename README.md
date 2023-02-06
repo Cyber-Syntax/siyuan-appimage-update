@@ -11,11 +11,6 @@
 - [ ] Update comment's when you achieve new knowledge.
 - [ ] Make it usable for other appimages as well.
 
-
-# Contributing
-- You are free to pull requests for development, but I would like to point out that I do not have the knowledge to make a very advanced application yet.
-    - [ ] Achieve that.
-
 # Authors
 - Cyber-Syntax - Initial work
 
