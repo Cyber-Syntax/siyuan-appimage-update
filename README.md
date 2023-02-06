@@ -6,7 +6,7 @@
 
 # Siyuan Script TODOS
 - [X] Clear code
-- [ ] Write version txt file
+- [X] Write version txt file
 - [ ] Check update when script started
 - [ ] Update comment's when you achieve new knowledge.
 - [ ] Make it usable for other appimages as well.
