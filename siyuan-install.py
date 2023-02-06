@@ -30,7 +30,7 @@ def verify_file():
     with open("SHA256SUMS.txt") as f:
         contents = f.read()    
         match = re.search(rf'siyuan-{version}-linux\.AppImage', contents)
-        if match:                
+        if match:                          
             cmd =["sha256sum", f"siyuan-{version}-linux.AppImage", "-c", "SHA256SUMS.txt"]
             result = subprocess.run(cmd, capture_output=True, text=True)              
             if f"siyuan-{version}-linux.AppImage: OK" in result.stdout:            
@@ -43,8 +43,11 @@ def verify_file():
                 pwd = ["pwd"]
                 result_pwd = subprocess.run(pwd, capture_output=True) 
                 # solve, unknown parameters     
-                last = result_pwd.stdout.decode('utf-8')[:-1]                
+                last = result_pwd.stdout.decode('utf-8')[:-1] 
+                # Move file appimages directory          
                 subprocess.run(["mv", f"{last}/siyuan.AppImage", os.path.expanduser("~") + "/Documents/appimages/"])
+                # Delete sha file                  
+                subprocess.run(["rm", "SHA256SUMS.txt"])      
             else:
                 print("Error: SHA256SUMS.txt verification failed!")
                 exit(1)
@@ -52,10 +55,30 @@ def verify_file():
             print("Error: File not found in SHA256SUMS.txt")
             exit(1)
 
+def log_version(): 
+       
+    f = open("siyuan-version", "a")
+    f.write(f"{version}\n")
+    f.close()
+
+    f = open("siyuan-version", "r")
+    print(f.read(), "The version is logged.")
+    
+    try:
+        pwd = ["pwd"]
+        result_pwd = subprocess.run(pwd, capture_output=True) 
+        # solve, unknown parameters     
+        last = result_pwd.stdout.decode('utf-8')[:-1]                     
+        subprocess.run(["mv", f"{last}/siyuan-version", os.path.expanduser("~") + "/Documents/appimages/"])    
+        print("Appimage version successfully logged.")            
+    except subprocess.CalledProcessError:
+        print("Error: while moving files to appimages directory")
+        return
+
 def main():
     get_files()
     verify_file()
-    
+    log_version()
     print("Siyuan installed successfully.")
 
 if __name__ == "__main__":
