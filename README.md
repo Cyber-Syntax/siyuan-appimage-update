@@ -8,7 +8,6 @@
 - [X] Clear code
 - [X] Write version txt file
 - [ ] Check update when script started
-- [ ] Update comment's when you achieve new knowledge.
 
 # Authors
 - Cyber-Syntax - Initial work
