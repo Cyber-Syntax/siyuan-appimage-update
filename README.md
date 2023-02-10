@@ -1,7 +1,7 @@
 # About Siyuan Script
 - It's installing latest siyuan version and verifying sha256.  
   - The script has custom lines. Do not use without looking.
-    - Folder paths, File moving
+    - Folder paths etc.
   - I don't take responsibility if cause errors.  
 
 # Siyuan Script TODOS
