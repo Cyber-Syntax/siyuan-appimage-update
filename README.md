@@ -1,5 +1,5 @@
 # It was abandoned.
-This script will no longer continue because I wrote a more advanced version of [my-unicorn](https://github.com/Cyber-Syntax/my-unicorn).
+This script will no longer continue because I wrote a more advanced version of :unicorn: [my-unicorn](https://github.com/Cyber-Syntax/my-unicorn).
 
 # About Siyuan Script
 - It's installing latest siyuan version and verifying sha256.  
